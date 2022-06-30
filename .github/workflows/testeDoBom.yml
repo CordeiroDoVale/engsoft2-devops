@@ -1,0 +1,8 @@
+name: Testes
+on: [push]
+jobs:
+  Testa-tudo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Roda o Cypress
+        run: yarn cypress run-ct
